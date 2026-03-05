@@ -121,40 +121,58 @@ export default function Home() {
           </p>
           {/* <img className="w-[50%]" src="/res/card.png" alt="" /> */}
         </div>
-        <button className="text-shadow-sm text-xl rounded-4xl mt-20 py-5 px-15 bg-[#BE9163] shadow-2xl">
+        <button
+          className="text-shadow-sm text-xl rounded-3xl mt-20 py-5 px-10 bg-[#BE9163] shadow-2xl font-bold 
+        hover:bg-amber-100 hover:scale-105 transform transition"
+        >
           GET STARTED
         </button>
       </section>
 
-      <section style={{ marginTop: "60px" }} className="w-[70%] mx-auto">
-        <h2 className="text-3xl text-white font-bold m-5">Features:</h2>
+      <section style={{ marginTop: "30px" }} className="w-[70%] mx-auto">
+        {/* <h2 className="text-3xl text-white font-bold m-5">Features:</h2> */}
         <div
-          style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}
-          className="justify-between mx-10"
+          style={{ display: "flex", gap: "5px" }}
+          className="justify-between"
         >
-          <div className="relative w-[30%] h-40 rounded-xl overflow-hidden">
-            <img
-              src="/res/track.jpg"
-              alt="Track"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 p-5 flex flex-col justify-center text-white">
-              <h3 className="text-xl drop-shadow-lg">Track Expenses</h3>
+          <div className="relative w-[32%] h-50 rounded-xl overflow-hidden">
+            <div
+              className="absolute inset-0 p-5 flex flex-col justify-center text-white bg-center bg-cover bg-no-repeat"
+              style={{
+                backgroundImage:
+                  "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/res/track.jpg')",
+              }}
+            >
+              <h3 className="text-2xl drop-shadow-lg font-bold">
+                Track Expenses
+              </h3>
               <p className="text-md drop-shadow-md">
                 Monitor where your money goes.
               </p>
             </div>
           </div>
 
-          <div className="bg-[url('/res/save.jpg')] bg-red-600 rounded-xl p-5 w-[30%] bg-center bg-cover bg-no-repeat">
-            <h3 className="text-xl text-shadow-lg">Save Money</h3>
+          <div
+            className="inset-0 p-5 flex flex-col justify-center w-[32%] h-50 rounded-xl bg-center bg-cover bg-no-repeat"
+            style={{
+              backgroundImage:
+                "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/res/save.jpg')",
+            }}
+          >
+            <h3 className="text-2xl drop-shadow-lg font-bold">Save Money</h3>
             <p className="text-md text-shadow-lg">
               Build healthy saving habits.
             </p>
           </div>
 
-          <div className="bg-[url('/res/insights.jpg')] bg-green-800 rounded-xl  p-5 w-[30%] bg-center bg-cover bg-no-repeat">
-            <h3 className="text-xl">Insights</h3>
+          <div
+            className="inset-0 p-5 flex flex-col justify-center w-[32%] h-50 rounded-xl bg-center bg-cover bg-no-repeat"
+            style={{
+              backgroundImage:
+                "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/res/insights.jpg')",
+            }}
+          >
+            <h3 className="text-2xl drop-shadow-lg font-bold">Insights</h3>
             <p className="text-md">Understand your financial behavior.</p>
           </div>
         </div>
