@@ -1,4 +1,4 @@
-// import Image from "next/image";
+import Image from "next/image";
 
 // export default function Home() {
 //   return (
@@ -105,12 +105,6 @@
 export default function Home() {
   return (
     <main className="font-poppins p-14">
-      {/* <section>
-        <h1>Smart Money Management</h1>
-        <p>Track, save, and grow your money easily.</p>
-        <button>Get Started</button>
-      </section> */}
-
       <section className="bg-[url('/res/bg-money.jpg')] bg-center bg-cover bg-no-repeat  p-[8%] rounded-4xl w-[70%] mx-auto h-120">
         <h1 className="font-poppins text-2xl font-bold text-shadow-lg">
           SMART MONEY MANAGEMENT
@@ -119,18 +113,16 @@ export default function Home() {
           <p className="text-5xl font-extrabold text-shadow-lg">
             Track, save, and grow your money easily.
           </p>
-          {/* <img className="w-[50%]" src="/res/card.png" alt="" /> */}
         </div>
         <button
           className="text-shadow-sm text-xl rounded-3xl mt-20 py-5 px-10 bg-[#BE9163] shadow-2xl font-bold 
-        hover:bg-amber-100 hover:scale-105 transform transition"
+        hover:bg-amber-100 hover:scale-105 transition duration-200 cursor-pointer"
         >
           GET STARTED
         </button>
       </section>
 
       <section style={{ marginTop: "30px" }} className="w-[70%] mx-auto">
-        {/* <h2 className="text-3xl text-white font-bold m-5">Features:</h2> */}
         <div
           style={{ display: "flex", gap: "5px" }}
           className="justify-between"
