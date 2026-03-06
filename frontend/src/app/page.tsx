@@ -122,7 +122,7 @@ export default function Home() {
         <div className="flex ">
           <p
             className="text-4xl font-extrabold text-shadow-lg 
-          lg:text-5xl"
+          lg:text-5xl xl:text-6xl "
           >
             Track, save, and grow your money easily.
           </p>
@@ -130,7 +130,7 @@ export default function Home() {
         <button
           className="w-[100%] text-shadow-sm text-xl rounded-3xl mt-25 py-5 px-5 bg-[#BE9163] shadow-2xl font-bold 
         hover:bg-amber-100 hover:scale-105 hover:text-black transition duration-200 cursor-pointer md:mt-40
-        lg:mt-30 lg:w-[30%] xl:mt-25 xl:w-[25%]"
+        lg:mt-30 lg:w-[30%] xl:mt-20 xl:w-[25%]"
         >
           GET STARTED
         </button>
@@ -145,8 +145,8 @@ export default function Home() {
               "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/res/track.jpg')",
           }}
         >
-          <h3 className="text-2xl drop-shadow-lg font-bold">Track Expenses</h3>
-          <p className="text-md drop-shadow-md">
+          <h3 className="text-2xl drop-shadow-lg font-bold lg:text-3xl">Track Expenses</h3>
+          <p className="text-md drop-shadow-md lg:text-lg">
             Monitor where your money goes.
           </p>
         </div>
@@ -159,8 +159,8 @@ export default function Home() {
               "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/res/save.jpg')",
           }}
         >
-          <h3 className="text-2xl drop-shadow-lg font-bold">Save Money</h3>
-          <p className="text-md text-shadow-lg">Build healthy saving habits.</p>
+          <h3 className="text-2xl drop-shadow-lg font-bold lg:text-3xl">Save Money</h3>
+          <p className="text-md text-shadow-lg lg:text-lg">Build healthy saving habits.</p>
         </div>
 
         <div
@@ -171,8 +171,8 @@ export default function Home() {
               "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/res/insights.jpg')",
           }}
         >
-          <h3 className="text-2xl drop-shadow-lg font-bold">Insights</h3>
-          <p className="text-md">Understand your financial behavior.</p>
+          <h3 className="text-2xl drop-shadow-lg font-bold lg:text-3xl">Insights</h3>
+          <p className="text-md text-shadow-lg lg:text-lg">Understand your financial behavior.</p>
         </div>
       </section>
     </main>
