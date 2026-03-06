@@ -104,69 +104,75 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="font-poppins p-14">
-      <section className="bg-[url('/res/bg-money.jpg')] bg-center bg-cover bg-no-repeat  p-[8%] rounded-4xl w-[70%] mx-auto h-120">
-        <h1 className="font-poppins text-2xl font-bold text-shadow-lg">
+    <main className="font-poppins py-14">
+      <section
+        className="bg-[url('/res/bg-money.jpg')] bg-center bg-cover bg-no-repeat p-[8%] rounded-4xl w-[80%] mx-auto h-120
+       xl:h-130"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/res/bg-money.jpg')",
+        }}
+      >
+        <h1
+          className="font-poppins text-xl font-bold text-shadow-lg pb-[7%]
+        lg:pb-5"
+        >
           SMART MONEY MANAGEMENT
         </h1>
         <div className="flex ">
-          <p className="text-5xl font-extrabold text-shadow-lg">
+          <p
+            className="text-4xl font-extrabold text-shadow-lg 
+          lg:text-5xl"
+          >
             Track, save, and grow your money easily.
           </p>
         </div>
         <button
-          className="text-shadow-sm text-xl rounded-3xl mt-20 py-5 px-10 bg-[#BE9163] shadow-2xl font-bold 
-        hover:bg-amber-100 hover:scale-105 transition duration-200 cursor-pointer"
+          className="w-[100%] text-shadow-sm text-xl rounded-3xl mt-25 py-5 px-5 bg-[#BE9163] shadow-2xl font-bold 
+        hover:bg-amber-100 hover:scale-105 hover:text-black transition duration-200 cursor-pointer md:mt-40
+        lg:mt-30 lg:w-[30%] xl:mt-25 xl:w-[25%]"
         >
           GET STARTED
         </button>
       </section>
 
-      <section style={{ marginTop: "30px" }} className="w-[70%] mx-auto">
+      <section className="flex gap-2 flex-col lg:flex-row justify-between w-[80%] mx-auto ">
         <div
-          style={{ display: "flex", gap: "5px" }}
-          className="justify-between"
+          className="inset-0 p-5 flex flex-col justify-center w-[100%] h-50 rounded-xl bg-center bg-cover bg-no-repeat mt-5
+              lg:flex-1 lg:h-60 hover:scale-102 transition"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/res/track.jpg')",
+          }}
         >
-          <div className="relative w-[32%] h-50 rounded-xl overflow-hidden">
-            <div
-              className="absolute inset-0 p-5 flex flex-col justify-center text-white bg-center bg-cover bg-no-repeat"
-              style={{
-                backgroundImage:
-                  "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/res/track.jpg')",
-              }}
-            >
-              <h3 className="text-2xl drop-shadow-lg font-bold">
-                Track Expenses
-              </h3>
-              <p className="text-md drop-shadow-md">
-                Monitor where your money goes.
-              </p>
-            </div>
-          </div>
+          <h3 className="text-2xl drop-shadow-lg font-bold">Track Expenses</h3>
+          <p className="text-md drop-shadow-md">
+            Monitor where your money goes.
+          </p>
+        </div>
 
-          <div
-            className="inset-0 p-5 flex flex-col justify-center w-[32%] h-50 rounded-xl bg-center bg-cover bg-no-repeat"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/res/save.jpg')",
-            }}
-          >
-            <h3 className="text-2xl drop-shadow-lg font-bold">Save Money</h3>
-            <p className="text-md text-shadow-lg">
-              Build healthy saving habits.
-            </p>
-          </div>
+        <div
+          className="inset-0 p-5 flex flex-col justify-center w-[100%] h-50 rounded-xl bg-center bg-cover bg-no-repeat mt-5
+            lg:flex-1 lg:h-60  hover:scale-102 transition"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/res/save.jpg')",
+          }}
+        >
+          <h3 className="text-2xl drop-shadow-lg font-bold">Save Money</h3>
+          <p className="text-md text-shadow-lg">Build healthy saving habits.</p>
+        </div>
 
-          <div
-            className="inset-0 p-5 flex flex-col justify-center w-[32%] h-50 rounded-xl bg-center bg-cover bg-no-repeat"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/res/insights.jpg')",
-            }}
-          >
-            <h3 className="text-2xl drop-shadow-lg font-bold">Insights</h3>
-            <p className="text-md">Understand your financial behavior.</p>
-          </div>
+        <div
+          className="inset-0 p-5 flex flex-col justify-center w-[100%] h-50 rounded-xl bg-center bg-cover bg-no-repeat mt-5
+            lg:flex-1 lg:h-60 hover:scale-102 transition "
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/res/insights.jpg')",
+          }}
+        >
+          <h3 className="text-2xl drop-shadow-lg font-bold">Insights</h3>
+          <p className="text-md">Understand your financial behavior.</p>
         </div>
       </section>
     </main>
